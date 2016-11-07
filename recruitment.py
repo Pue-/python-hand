@@ -24,7 +24,9 @@ def getList(city, keyword, pageNum):
 		for singleList in infoList:
 			#print('%s' %type(singleList))
 			for oneParam in singleList:
+				if oneParam == 'companySize':
+					print('================招聘信息分割线=====================')
 				print('%s:%s' %(oneParam,singleList[oneParam]))
 	#print('总爬取页数:%d 总爬取职位数:%d' %(pageNum, len(infoList)))
 
-getList('成都','php',500)
+getList('北京','java',500)
